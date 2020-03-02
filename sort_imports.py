@@ -29,9 +29,9 @@ def main(options, target_dir):
                 # https://github.com/timothycrosley/isort/wiki/isort-Settings
                 sorter = SortImports(
                     file_contents=target_file.read(),
+                    line_length=120,
                     force_alphabetical_sort=True,
-                    lines_after_imports=0,
-                    lines_between_types=0
+                    force_single_line=True
                 )
 
                 new_contents = sorter.output

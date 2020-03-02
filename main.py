@@ -38,7 +38,7 @@ def main(options, target_dir):
             if count > 1:
                 print('%s (%s)' % (
                     colored(f'{count}x imported "{import_name}"', 'red'),
-                    filepath))
+                    filename))
 
 
 if __name__ == '__main__':
